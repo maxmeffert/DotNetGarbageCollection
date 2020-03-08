@@ -52,11 +52,13 @@ Actually its 12 bytes and 24 bytes but the memory manager can't handle that very
 
 ### The Small Object Heap
 
-The Small Object Heap is divided in 3 generations.
+The Small Object Heap is divided into 3 sections called generations.
 
 * __Gen 0__ the 1st genertaion
 * __Gen 1__ the 2nd generation (serves as cache for Gen 2)
 * __Gen 2__ the 3rd and last generation
+
+Objects may pass through all generations during their lifetime.
 
 Once in Gen 2, objects stay here till they _die_.
 
