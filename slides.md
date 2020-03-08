@@ -142,4 +142,4 @@ Ideally, most of your objects die in Gen 0 and few live in Gen 2 for the lifetim
 
 ---
 
-# Time spend on garbage collection is time not spend on the rest of your program!
+# Time spend in garbage collection is time not spend in the rest of your program!
