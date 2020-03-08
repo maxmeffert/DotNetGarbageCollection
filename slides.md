@@ -138,8 +138,8 @@ Gen 2 and Gen 1 collections may not be triggered by allocations but due to other
 * Garbage Collections tend to get more expensive for higher generations
 * Gen 1 objects need to be moved __physically__ when SOH requires a new segement
 
-Ideally, most of your objects die in Gen 0 and few live in Gen 2 for the lifetime of your application.
+Ideally, most objects die in Gen 0 and few live in Gen 2 for the lifetime of the application.
 
 ---
 
-# Time spend in garbage collection is time not spend in the rest of your program!
+# Time spend in garbage collection is time not spend in the rest of the program!
