@@ -117,7 +117,9 @@ All non-_seen_ objects die of here!
 
 ### Example
 
-* Gen 2 and Gen 1 are not garbage collected! Gen 2 and Gen 1 collections may not be triggered by allocations but due to other internal GC metrics and thresholds, e.g. available memory on a machine.
+* __Gen 2 and Gen 1 are not garbage collected!__
+
+Gen 2 and Gen 1 collections may not be triggered by allocations but due to other internal GC metrics and thresholds, e.g. available memory on a machine.
 
 ---
 
