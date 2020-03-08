@@ -66,10 +66,12 @@ Objects are _alive_ as long as they are referenced by a __GC root__, e.g. static
 
 ### Segments
 
-Segments = Fixed sized parts of memory owned by SOH or LOH.
+Segments = Fixed sized parts of physical memory owned by SOH or LOH.
 
 * LOH & Gen 2 can span multiple segements
 * Gen 0 & Gen 1 always reside in the same segment
+
+![w:650px](./images/Segments.svg)
 
 ---
 
