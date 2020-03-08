@@ -100,7 +100,7 @@ Garbage Collection consists of 4 phases:
 4. __Resume__: Resume all suspended threads
 
 Garbage Collection happens only for the triggering generation and lower generations.
-Gen 2 colleciton also collects Gen 1 and Gen 0. Gen 1 collection also collects Gen 0.
+Gen 2 collection also collects Gen 1 and Gen 0. Gen 1 collection also collects Gen 0.
 
 All non-_seen_ objects die of here!
 
