@@ -45,7 +45,7 @@ for objects < 85000 bytes, most of all objects
 * __Large Object Heap (LOH)__
 for objects >= 85000 bytes, mostly arrays and strings
 
-Size of an empty object: 16 bytes (32bit), 32 bytes (64bit).
+Size of an object without fields and methods: 16 bytes (32-bit), 32 bytes (64-bit).
 Actually its 12 bytes and 24 bytes but the memory manager can't handle that very well.
 
 ---
