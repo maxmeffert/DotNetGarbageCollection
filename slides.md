@@ -100,8 +100,7 @@ All non-_seen_ objects die of here!
 
 ### Example
 
-![w:700px](./images/Example.png)
-
+![w:600px](./images/Example.svg)
 
 ---
 
