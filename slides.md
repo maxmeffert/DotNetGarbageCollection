@@ -104,6 +104,23 @@ All non-_seen_ objects die of here!
 
 ---
 
+### Example
+
+* We try to allocate obj6 which triggers a garbage collection
+* Fast allocation fails and Gen 0 expansion exceeds segement size
+* A Gen0 Garbage Collection is triggered:
+  * Gen 1 objects are not moved and promoted to Gen 2 
+  * Gen 0 objects are moved to a new segement and promoted to Gen 1
+  * A new Gen 0 is reserved and obj6 is allocated there
+
+---
+
+### Example
+
+* Gen 2 and Gen 1 are not garbage collected! Gen 2 and Gen 1 collections may not be triggered by allocations but due to other internal GC metrics and thresholds.
+
+---
+
 ### The Most Important Rule
 
 > _[...] the garbage collector was explicitly designed with this idea in mind: **Collect objects in Gen 0 or not at all.**_  - Ben Watson, Writing High-Perforamnce .NET Code
