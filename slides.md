@@ -28,7 +28,7 @@ Heap = Process memory reserved for allocation of data.
 A mangaged process has 2 kinds of heaps:
 
 * __Native Heap__: 
-used by Windows & CLR for unmanaged memory, e.g. Windows API, OS data structures, the CLR itself
+used by Windows and CLR for unmanaged memory, e.g. Windows API, OS data structures, the CLR itself
 
 * __Managed Heap__  (_GC Heap_): 
 used by the CLR to allocate objects subjected to garbage collection
@@ -70,8 +70,8 @@ Objects are _alive_ as long as they are referenced by a __GC root__, e.g. static
 
 Segments = Fixed sized parts of physical memory owned by SOH or LOH.
 
-* LOH & Gen 2 can span multiple segements
-* Gen 0 & Gen 1 always reside in the same segment
+* LOH and Gen 2 can span multiple segements
+* Gen 0 and Gen 1 always reside in the same segment
 
 ![w:650px](./images/Segments.svg)
 
