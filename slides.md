@@ -42,7 +42,7 @@ The Managed Heap is devided in 2 sections.
 * __Small Object Heap (SOH)__
 for objects < 85000 bytes, most of all objects
 
-* __Large Object heap (LOH)__
+* __Large Object Heap (LOH)__
 for objects >= 85000 bytes, mostly arrays and strings
 
 Size of an empty object: 16 bytes (32bit), 32 bytes (64bit).
