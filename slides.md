@@ -27,8 +27,11 @@ Heap = Process memory reserved for allocation of data.
 
 A mangaged process has 2 kinds of heaps:
 
-* __Native Heap__: used by Windows & CLR for unmanaged memory: Windows API, OS data structures, the CLR itself
-* __Managed Heap__  (_GC Heap_): used by the CLR to allocation Objects subjected to garbage collection
+* __Native Heap__: 
+used by Windows & CLR for unmanaged memory: Windows API, OS data structures, the CLR itself
+
+* __Managed Heap__  (_GC Heap_): 
+used by the CLR to allocate objects subjected to garbage collection
 
 ---
 
@@ -36,8 +39,11 @@ A mangaged process has 2 kinds of heaps:
 
 The Managed Heap is devided in 2 sections.
 
-* __Small Object Heap (SOH)__ for objects < 85000 bytes which are most of all objects
-* __Large Object heap (LOH)__ for objects >= 85000 bytes mostly arrays and strings
+* __Small Object Heap (SOH)__
+for objects < 85000 bytes, most of all objects
+
+* __Large Object heap (LOH)__
+for objects >= 85000 bytes, mostly arrays and strings
 
 Size of an empty object: 16 bytes (32bit), 32 bytes (64bit).
 Actually its 12 bytes and 24 bytes but the memory manager can't handle that very well.
@@ -109,7 +115,7 @@ All non-_seen_ objects die of here!
 * We try to allocate obj6 which triggers a garbage collection
 * Fast allocation fails and Gen 0 expansion exceeds segement size
 * A Gen0 Garbage Collection is triggered:
-  * Gen 1 objects are not moved and promoted to Gen 2 
+  * Gen 1 objects are not moved and promoted to Gen 2 (see Gen 1 as cache for Gen 2)
   * Gen 0 objects are moved to a new segement and promoted to Gen 1
   * A new Gen 0 is reserved and obj6 is allocated there
 
