@@ -117,7 +117,7 @@ All non-_seen_ objects die of here!
 
 ### Example
 
-* Gen 2 and Gen 1 are not garbage collected! Gen 2 and Gen 1 collections may not be triggered by allocations but due to other internal GC metrics and thresholds.
+* Gen 2 and Gen 1 are not garbage collected! Gen 2 and Gen 1 collections may not be triggered by allocations but due to other internal GC metrics and thresholds, e.g. available memory on a machine.
 
 ---
 
@@ -125,7 +125,10 @@ All non-_seen_ objects die of here!
 
 > _[...] the garbage collector was explicitly designed with this idea in mind: **Collect objects in Gen 0 or not at all.**_  - Ben Watson, Writing High-Perforamnce .NET Code
 
-* Garbage collection for Gen 1 and Gen 2 are expensive
+* Garbage Collections tend to get more expensive for higher generations
+* Gen 1 objects need to be moved __physically__ when SOH requires a new segement
+
+Ideally, most of your objects die in Gen 0 and few live in Gen 2 for the lifetime of your application.
 
 ---
 
