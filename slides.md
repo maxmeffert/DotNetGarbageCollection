@@ -95,7 +95,7 @@ __If expansion exceeds segement size a *Garbage Collection* is triggered!__
 Garbage Collection consists of 4 phases:
 
 1. __Suspension__: Suspend all managed threads
-2. __Mark__: Mark all objects reachable from any GC root as _seen_ (alive)
+2. __Mark__: Mark all objects referenced by any GC root as _seen_/alive
 3. __Compact__: Relocate and promote seen objects to reduce memory fragmentation
 4. __Resume__: Resume all suspended threads
 
