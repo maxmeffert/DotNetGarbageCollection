@@ -11,9 +11,9 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ---
 
-![bg right 80%](./images/WHPNC-Cover.jpg)
-
 ### Writing High-Perforamnce .NET Code
+
+![bg right 80%](./images/WHPNC-Cover.jpg)
 * by Ben Watson 
 * [www.writinghighperf.net](https://www.writinghighperf.net)
 
