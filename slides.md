@@ -28,7 +28,7 @@ Heap = Process memory reserved for allocation of data.
 A mangaged process has 2 kinds of heaps:
 
 * __Native Heap__: 
-used by Windows & CLR for unmanaged memory: Windows API, OS data structures, the CLR itself
+used by Windows & CLR for unmanaged memory, e.g. Windows API, OS data structures, the CLR itself
 
 * __Managed Heap__  (_GC Heap_): 
 used by the CLR to allocate objects subjected to garbage collection
@@ -82,9 +82,9 @@ The CLR tries to allocate new objects 3 times:
 #### Fast Allocation
 1. Try to allocate at the end of Gen 0
 
-#### Slow Allocation
+#### Slow Allocation (if Fast Allocation fails)
 2. Try to allocate anywhere within Gen 0
-3. Try to expand Gen 0 and allocate at the new end
+3. Or try to expand Gen 0 and allocate at the new end
 
 __If expansion exceeds segement size a *Garbage Collection* is triggered!__
 
@@ -115,7 +115,7 @@ All non-_seen_ objects die of here!
 ### Example
 
 * We try to allocate obj6 which triggers a garbage collection
-* Fast allocation fails and Gen 0 expansion exceeds segement size
+* Fast Allocation fails and Gen 0 expansion exceeds segement size
 * A Gen0 Garbage Collection is triggered:
   * Gen 1 objects are not moved and promoted to Gen 2 (see Gen 1 as cache for Gen 2)
   * Gen 0 objects are moved to a new segement and promoted to Gen 1
