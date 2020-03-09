@@ -11,11 +11,14 @@ footer: 'Maximilian Meffert (c) 2020'
 
 ---
 
-### Writing High-Perforamnce .NET Code
+### Reference
 
 ![bg right 80%](./images/WHPNC-Cover.jpg)
-* by Ben Watson 
-* [www.writinghighperf.net](https://www.writinghighperf.net)
+
+_Writing High-Perforamnce .NET Code_
+by Ben Watson 
+
+[www.writinghighperf.net](https://www.writinghighperf.net)
 
 > _In .NET, you need to think of memory performance at least as much as CPU performance. It is so fundamental to smooth .NET operation, that the most significant chunk of this book’s content is dedicated to just this topic._ - Ben Watson, Writing High-Perforamnce .NET Code
 
