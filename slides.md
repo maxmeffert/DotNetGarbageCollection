@@ -119,8 +119,9 @@ All non-_seen_ objects die of here!
 
 ### Example
 
-* Trying to allocate obj6 triggers a garbage collection
-* Fast Allocation fails and Gen 0 expansion exceeds segement size
+* Trying to allocate obj6 triggers a garbage collection, i.e.:
+  * Fast Allocation has faild
+  * and Gen 0 expansion exceeds segement size
 * A Gen0 Garbage Collection is triggered:
   * Gen 1 objects are not moved and promoted to Gen 2 (see Gen 1 as cache for Gen 2)
   * Gen 0 objects are moved to a new segement and promoted to Gen 1
